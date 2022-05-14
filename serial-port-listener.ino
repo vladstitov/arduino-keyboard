@@ -97,10 +97,6 @@ char c = Serial.read();
  
  
 /// Keyboard.write(c);
- }
-  /// Keyboard.println(incomingString);
-  /// Keyboard.write('A');
- ///  Serial.println(incomingString);
- 
+ } 
 
 }
