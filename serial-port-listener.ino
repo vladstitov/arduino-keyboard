@@ -1,12 +1,12 @@
 #include <Keyboard.h>
-#include <Mouse.h>
+///#include <Mouse.h>
 char c;
 String cmd;
 char letter;
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Keyboard.begin();
-   Mouse.begin();
+  /// Mouse.begin();
   }
 
 void loop() { 
@@ -21,7 +21,7 @@ char c = Serial.read();
       ////  Serial.println(cmd +" l: " + String(cmd.length()));
       if(cmd.length() == 1){
         switch(cmd[0]) {
-           case 'V': Keyboard.releaseAll();
+           case 'V': Keyboard.releaseAll();        
              break;   
           case 'S': Keyboard.press(KEY_LEFT_SHIFT);
             break;
